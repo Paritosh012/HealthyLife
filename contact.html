@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | HealthyLife</title>
+  <meta name="description" content="Contact HealthyLife.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="logo"><span class="dot"></span>HealthyLife</a>
+    <button class="menuBtn" id="menuBtn">Menu</button>
+    <nav>
+      <ul class="navLinks" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tools.html">Tools</a></li>
+        <li><a href="guides.html">Guides</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="banner">
+    <div class="container">
+      <h1>Contact</h1>
+      <p>Questions, topic ideas or found a mistake? Drop a message.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container contact-wrap">
+      <div>
+        <form class="box" id="contactForm">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name">
+            <p class="err" id="nameErr"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email">
+            <p class="err" id="emailErr"></p>
+          </div>
+          <div class="field">
+            <label for="topic">Subject</label>
+            <select id="topic">
+              <option value="">Select</option>
+              <option value="question">Question</option>
+              <option value="idea">Topic suggestion</option>
+              <option value="mistake">Report a mistake</option>
+              <option value="other">Other</option>
+            </select>
+            <p class="err" id="topicErr"></p>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message"></textarea>
+            <p class="err" id="msgErr"></p>
+          </div>
+          <button type="submit" class="btn btn-main">Send</button>
+        </form>
+
+        <div class="thanks" id="thanks">
+          <h2>Thanks <span id="thanksName"></span>!</h2>
+          <p>We got your message and will get back to you soon.</p>
+        </div>
+      </div>
+
+      <aside>
+        <div class="side-box yellow">
+          <h3>Emergency?</h3>
+          <p>Don't use this form. Call 112 or go to the nearest hospital.</p>
+        </div>
+        <div class="side-box">
+          <h3>Email</h3>
+          <p><a href="mailto:hello@healthylife.com">hello@healthylife.com</a></p>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo"><span class="dot"></span>HealthyLife</a>
+        <p>Health guides and calculators.</p>
+      </div>
+      <div>
+        <h3>Links</h3>
+        <ul>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="guides.html">Guides</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Disclaimer</h3>
+        <p>Not medical advice. For emergencies in India call 112.</p>
+      </div>
+    </div>
+    <p class="copy">&copy; 2026 HealthyLife</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

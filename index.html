@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthyLife | Health tips & tools</title>
+  <meta name="description" content="Health guides and free calculators for sleep, water, BMI and exercise.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="logo"><span class="dot"></span>HealthyLife</a>
+    <button class="menuBtn" id="menuBtn">Menu</button>
+    <nav>
+      <ul class="navLinks" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="tools.html">Tools</a></li>
+        <li><a href="guides.html">Guides</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-wrap">
+      <div class="left">
+        <h1>Small daily habits for a healthier life</h1>
+        <p>Guides and free calculators for sleep, water, exercise and BMI. All the numbers come from WHO and CDC guidelines.</p>
+        <div class="btns">
+          <a href="tools.html" class="btn btn-main">Try the tools</a>
+          <a href="guides.html" class="btn btn-border">Read guides</a>
+        </div>
+        <p class="note">General information only, not medical advice.</p>
+      </div>
+
+      <div class="right">
+        <div class="circle"></div> 
+        <div class="daycard">
+          <h3>Your day</h3>
+          <div class="bars">
+            <div class="bar b1"></div>
+            <div class="bar b2"></div>
+            <div class="bar b3"></div>
+            <div class="bar b4"></div>
+            <div class="bar b5"></div>
+            <div class="bar b6"></div>
+            <div class="bar b7"></div>
+          </div>
+          <div class="labels"><span>Morning</span><span>Night</span></div>
+        </div>
+        <div class="tag tag1">😴 Sleep 7+ hrs</div>
+        <div class="tag tag2">💧 Drink water</div>
+        <div class="tag tag3">🚶 30 min walk</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="white">
+    <div class="container">
+      <div class="heading">
+        <h2>Quick routine check</h2>
+        <p>5 questions about your sleep, exercise and daylight. Nothing gets saved.</p>
+      </div>
+
+      <div class="row">
+        <form class="box" id="quizForm">
+          <div class="field">
+            <label for="sleepHrs">How many hours do you sleep at night?</label>
+            <select id="sleepHrs">
+              <option value="">Select</option>
+              <option value="less">Less than 7</option>
+              <option value="7-9">7 - 9 hours</option>
+              <option value="more">More than 9</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="wake">Do you wake up at the same time daily?</label>
+            <select id="wake">
+              <option value="">Select</option>
+              <option value="same">Yes, mostly</option>
+              <option value="sometimes">Sometimes</option>
+              <option value="rarely">Rarely</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="exercise">How many days a week do you exercise (30 min or more)?</label>
+            <select id="exercise">
+              <option value="">Select</option>
+              <option value="0-1">0 - 1 day</option>
+              <option value="2-3">2 - 3 days</option>
+              <option value="4+">4 or more</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="sun">Time spent outside in daylight</label>
+            <select id="sun">
+              <option value="">Select</option>
+              <option value="less">Under 30 minutes</option>
+              <option value="more">30 minutes or more</option>
+            </select>
+          </div>
+          <div class="field"> 
+            <label for="phone">Phone in the last hour before sleeping?</label>
+            <select id="phone">
+              <option value="">Select</option>
+              <option value="rarely">Rarely</option>
+              <option value="often">Most nights</option>
+            </select>
+          </div>
+          <div class="btns">
+            <button type="submit" class="btn btn-main">Check</button>
+            <button type="reset" class="btn btn-border">Reset</button>
+          </div>
+        </form>
+
+        <div class="output" id="quizResult">
+          <p class="muted">Fill all the questions and click Check.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="heading">
+        <h2>Tools</h2>
+        <p>Free calculators, no login.</p>
+      </div>
+      <div class="cards">
+        <a href="tools.html#bedtime" class="card">
+          <div class="icon">🌙</div>
+          <h3>Bedtime calculator</h3>
+          <p>Tells you when to sleep based on your alarm time.</p>
+          <span class="link-text">Open</span>
+        </a>
+        <a href="tools.html#water" class="card">
+          <div class="icon">💧</div>
+          <h3>Water intake</h3>
+          <p>How much water you should drink in a day.</p>
+          <span class="link-text">Open</span>
+        </a>
+        <a href="tools.html#bmi" class="card">
+          <div class="icon">⚖️</div>
+          <h3>BMI calculator</h3>
+          <p>Your BMI and healthy weight range for your height.</p>
+          <span class="link-text">Open</span>
+        </a>
+        <a href="tools.html#weekly" class="card">
+          <div class="icon">🏃</div>
+          <h3>Weekly exercise</h3>
+          <p>Add your exercise minutes and see if you hit 150.</p>
+          <span class="link-text">Open</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark">
+    <div class="container">
+      <div class="heading">
+        <h2>3 habits for better sleep</h2>
+        <p>Our body works on a roughly 24 hour clock. Light and routine keep it in sync.</p>
+      </div>
+      <div class="habits">
+        <article class="habit">
+          <h3>Morning sunlight</h3>
+          <p>Step outside after waking up. Daylight tells the body that the day has started.</p>
+        </article>
+        <article class="habit">
+          <h3>Fixed wake-up time</h3>
+          <p>Try to wake up around the same time every day, weekends too.</p>
+        </article>
+        <article class="habit">
+          <h3>No phone before bed</h3>
+          <p>Screen light late at night makes it harder to fall asleep.</p>
+        </article>
+      </div>
+      <a href="guides.html#sleep">Read more about sleep</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="heading">
+        <h2>Guides</h2>
+      </div>
+      <div class="cards cards2">
+        <a href="guides.html#sleep" class="card">
+          <h3>How much sleep do adults need?</h3>
+          <p>Recommended hours and signs you're not sleeping enough.</p>
+          <span class="link-text">Read</span>
+        </a>
+        <a href="guides.html#exercise" class="card">
+          <h3>How much exercise is enough?</h3>
+          <p>WHO weekly exercise targets.</p>
+          <span class="link-text">Read</span>
+        </a>
+        <a href="guides.html#water" class="card">
+          <h3>How much water should you drink?</h3>
+          <p>Daily amounts and how to check if you're drinking enough.</p>
+          <span class="link-text">Read</span>
+        </a>
+        <a href="guides.html#numbers" class="card">
+          <h3>Health report numbers</h3>
+          <p>BMI, blood pressure and blood sugar ranges.</p>
+          <span class="link-text">Read</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="white">
+    <div class="container">
+      <div class="heading">
+        <h2>FAQs</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Is this medical advice?</summary>
+          <p>No. This is general information. Please consult a doctor for anything personal.</p>
+        </details>
+        <details>
+          <summary>Is my data saved anywhere?</summary>
+          <p>No, all the calculators run in the browser itself. Nothing is stored or sent.</p>
+        </details>
+        <details>
+          <summary>Where is the information taken from?</summary>
+          <p>Mostly from WHO and CDC. Sources are listed at the end of each guide.</p>
+        </details>
+        <details>
+          <summary>Can I suggest a topic?</summary>
+          <p>Yes, use the <a href="contact.html">contact page</a>.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="cta">
+        <h2>Start with your bedtime</h2>
+        <p>Enter your alarm time and get two bedtime options.</p>
+        <a href="tools.html#bedtime" class="btn btn-light">Bedtime calculator</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo"><span class="dot"></span>HealthyLife</a>
+        <p>Health guides and calculators.</p>
+      </div>
+      <div>
+        <h3>Links</h3>
+        <ul>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="guides.html">Guides</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Disclaimer</h3>
+        <p>Not medical advice. For emergencies in India call 112.</p>
+      </div>
+    </div>
+    <p class="copy">&copy; 2026 HealthyLife</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
